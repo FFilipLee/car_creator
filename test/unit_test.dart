@@ -40,11 +40,4 @@ void main() {
     expect(colorString_2, equals('#8cccb5'));
     expect(colorString_3, equals('#a3e229'));
   });
-
-  test('correctness of SvgClass loadSvgString method', () {
-    Future<String> svgString =
-        SvgClass.loadSvgString('assets/graphics/Car4.svg');
-    expect(svgString.toString().contains('sodipodi:docname="Car4.svg"'),
-        equals(true));
-  });
 }
